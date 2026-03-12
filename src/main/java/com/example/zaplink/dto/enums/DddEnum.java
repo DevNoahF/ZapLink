@@ -1,5 +1,8 @@
 package com.example.zaplink.dto.enums;
 
+import lombok.Getter;
+
+@Getter
 public enum DddEnum {
         // Sudeste
     //sp
@@ -92,15 +95,7 @@ public enum DddEnum {
             this.descricao = descricao;
         }
 
-        public int getCodigo() {
-            return codigo;
-        }
-
-        public String getDescricao() {
-            return descricao;
-        }
-
-        // Método útil para buscar o Enum pelo número
+    // Método útil para buscar o Enum pelo número
         public static DddEnum fromCodigo(int codigo) {
             for (DddEnum d : DddEnum.values()) {
                 if (d.codigo == codigo) {
